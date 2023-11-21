@@ -23,7 +23,6 @@
       position: absolute;
       left: 0;
       right: 0;
-
       bottom: 100px;
       gap: 10px;
       margin: auto;
@@ -38,9 +37,7 @@
         border-radius: 5px;
         justify-content: center;
         cursor: pointer;
-        &:hover{
-          background-color: gray;
-        }
+        
       }
     }
   }
