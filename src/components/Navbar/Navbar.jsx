@@ -6,7 +6,7 @@ import PersonOutlineOutlinedIcon from "@mui/icons-material/PersonOutlineOutlined
 import FavoriteBorderOutlinedIcon from "@mui/icons-material/FavoriteBorderOutlined";
 import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
 import { Link } from "react-router-dom";
-import Imageflack from "/img/en.png";
+import Pakistan from "/img/pak.webp";
 
 const Navbar = () => {
   return (
@@ -15,7 +15,7 @@ const Navbar = () => {
         <div className="wrapper">
           <div className="left">
             <div className="item">
-              <img src={Imageflack} alt="shan" />
+              <img src={Pakistan} alt="shan" />
               <KeyboardArrowDownIcon />
             </div>
             <div className="item">
