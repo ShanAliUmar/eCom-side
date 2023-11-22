@@ -1,9 +1,4 @@
 
-
-
-
-
-
 .categories {
     display: flex;
     height: 80vh;
@@ -43,8 +38,13 @@
         border: none;
         background-color: white;
         text-transform: uppercase;
+        border-radius: 5px;
         font-weight: 500;
+        &:hover{
+          background-color: rgba(125, 116, 116, 0.778);
+        }
       }
+
   
       img{
         width: 100%;
