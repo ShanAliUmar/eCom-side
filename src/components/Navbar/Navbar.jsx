@@ -7,7 +7,6 @@ import FavoriteBorderOutlinedIcon from "@mui/icons-material/FavoriteBorderOutlin
 import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
 import { Link } from "react-router-dom";
 import Pakistan from "/img/pak.webp";
-
 const Navbar = () => {
   return (
     <div>
@@ -60,8 +59,6 @@ const Navbar = () => {
           </div>
         </div>
       </div>
-
-
     </div>
   )
 }

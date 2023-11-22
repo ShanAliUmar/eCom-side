@@ -14,7 +14,7 @@ const Categories = () => {
           <button>
             <Link className="link" to="/products/1">
               Sale
-            </Link>            
+            </Link>
           </button>
         </div>
         <div className="row">
