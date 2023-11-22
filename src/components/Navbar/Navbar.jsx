@@ -15,7 +15,7 @@ const Navbar = () => {
         <div className="wrapper">
           <div className="left">
             <div className="item">
-              {/* <img src={Pakistan} className='pakis' alt="shan" /> */}
+              <img src={Pakistan} className='pakis' alt="shan" />
               <KeyboardArrowDownIcon />
             </div>
             <div className="item">
