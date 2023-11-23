@@ -35,7 +35,7 @@
 
 
 import React from 'react'
-
+import Card from '../Card/Card'
 const FeaturedProducts = () => {
   return (
     <div>
@@ -50,13 +50,13 @@ const FeaturedProducts = () => {
            suspendisse ultrices gravida. Risus commodo viverra maecenas.
          </p>
        </div>
-       {/* <div className="bottom">
+       <div className="bottom">
          {error
            ? "Something went wrong!"
            : loading
            ? "loading"
            : data?.map((item) => <Card item={item} key={item.id} />)}
-       </div> */}
+       </div>
      </div>
     </div>
   )
