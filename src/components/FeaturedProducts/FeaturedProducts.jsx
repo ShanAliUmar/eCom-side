@@ -38,7 +38,7 @@ import "./FeaturedProducts.scss"
 const FeaturedProducts = () => {
   return (
     <div>
-
+        sdadj
     </div>
   )
 }
