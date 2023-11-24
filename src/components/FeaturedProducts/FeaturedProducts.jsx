@@ -1,5 +1,6 @@
 import React from "react";
 import "./FeaturedProducts.scss";
+import Card from "../Card/Card";
 const FeaturedProducts = ({ type }) => {
 
   let dataImg = [
@@ -52,7 +53,9 @@ const FeaturedProducts = ({ type }) => {
         </p>
       </div>
       <div className="bottom">
-        
+        {dataImg.map(item => (
+          <Card/>
+        ))}
       </div>
     </div>
   );
