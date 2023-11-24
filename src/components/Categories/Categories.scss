@@ -42,15 +42,10 @@
         font-weight: 500;
         transition: 0.5s;
         &:hover{
-          background-color: rgba(128, 153, 59, 0.778);
+          background-color: rgba(42, 24, 119, 0.778);
           color: aliceblue;
           transition: 0.5s;
-        }
-        a{
-         &:hover{
-          text-shadow: 2px 2px 2px rgb(0, 0, 0);
-          transition: 0.5s;
-         }
+          border: 1px solid wheat;
         }
       }
 
