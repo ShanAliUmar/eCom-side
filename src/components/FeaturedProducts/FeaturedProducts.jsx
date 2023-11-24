@@ -13,7 +13,7 @@ const FeaturedProducts = ({ type }) => {
       price: 12
     },
     {
-      id: 1,
+      id: 2,
       img1: "",
       img2: "",
       title: "",
@@ -22,7 +22,7 @@ const FeaturedProducts = ({ type }) => {
       price: 12
     },
     {
-      id: 1,
+      id: 3,
       img1: "",
       img2: "",
       title: "",
@@ -31,23 +31,14 @@ const FeaturedProducts = ({ type }) => {
       price: 12
     },
     {
-      id: 1,
+      id: 4,
       img1: "",
       img2: "",
       title: "",
       isNew:ture,
       oldPrice: 19,
       price: 12
-    },
-    {
-      id: 1,
-      img1: "",
-      img2: "",
-      title: "",
-      isNew:ture,
-      oldPrice: 19,
-      price: 12
-    },
+    }
   ]
 
   return (
