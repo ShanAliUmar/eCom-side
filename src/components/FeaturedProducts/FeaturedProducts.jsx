@@ -2,6 +2,54 @@ import React from "react";
 import "./FeaturedProducts.scss";
 const FeaturedProducts = ({ type }) => {
 
+  const data = [
+    {
+      id: 1,
+      img1: "",
+      img2: "",
+      title: "",
+      isNew:ture,
+      oldPrice: 19,
+      price: 12
+    },
+    {
+      id: 1,
+      img1: "",
+      img2: "",
+      title: "",
+      isNew:ture,
+      oldPrice: 19,
+      price: 12
+    },
+    {
+      id: 1,
+      img1: "",
+      img2: "",
+      title: "",
+      isNew:ture,
+      oldPrice: 19,
+      price: 12
+    },
+    {
+      id: 1,
+      img1: "",
+      img2: "",
+      title: "",
+      isNew:ture,
+      oldPrice: 19,
+      price: 12
+    },
+    {
+      id: 1,
+      img1: "",
+      img2: "",
+      title: "",
+      isNew:ture,
+      oldPrice: 19,
+      price: 12
+    },
+  ]
+
   return (
     <div className="featuredProducts">
       <div className="top">
