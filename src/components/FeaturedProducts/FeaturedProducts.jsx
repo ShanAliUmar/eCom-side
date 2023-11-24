@@ -53,6 +53,13 @@ const FeaturedProducts = ({ type }) => {
           suspendisse ultrices gravida. Risus commodo viverra maecenas.
         </p>
       </div>
+      <div className="bottom">
+        {error
+          ? "Something went wrong!"
+          : loading
+          ? "loading"
+          : data?.map((item) => <Card item={item} key={item.id} />)}
+      </div>
     </div>
   );
 };
