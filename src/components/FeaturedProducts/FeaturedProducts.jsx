@@ -54,7 +54,7 @@ const FeaturedProducts = ({ type }) => {
       </div>
       <div className="bottom">
         {dataImg.map(item => (
-          <Card/>
+          <Card item={item} key={item.id}   />
         ))}
       </div>
     </div>
