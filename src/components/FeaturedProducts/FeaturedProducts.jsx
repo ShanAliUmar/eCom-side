@@ -2,10 +2,10 @@ import React from "react";
 import "./FeaturedProducts.scss";
 const FeaturedProducts = ({ type }) => {
 
-  const data = [
+  let dataImg = [
     {
       id: 1,
-      img1: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbreRd-7wl3SKJoZ3xjxoo969CeoeqRJiQGw&usqp=CAU",
+      img1: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrVN9H11wCam0PY3Wp44gEjVOWihP2BNyltg&usqp=CAU",
       img2: "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.123rf.com%2Fphoto_74578309_indian-boy-in-blue-jeans-and-black-goggle-front-pose.html&psig=AOvVaw0wcsJnocUl76OtlOTTgNbJ&ust=1700891652996000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCJCtzKn524IDFQAAAAAdAAAAABAR",
       title: "Long Sleeve Graphic T-shirt",
       isNew:ture,
@@ -23,8 +23,8 @@ const FeaturedProducts = ({ type }) => {
     },
     {
       id: 3,
-      img1: "",
-      img2: "",
+      img2: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyhGZkr-jwMKy0f8M9JxDi1f03IKDEvMEsoA&usqp=CAU",
+      img1: "https://i.pinimg.com/originals/5a/87/93/5a87931b2d7502bc082e023332484763.jpg",
       title: "Skirt",
       isNew:ture,
       oldPrice: 19,
@@ -32,8 +32,8 @@ const FeaturedProducts = ({ type }) => {
     },
     {
       id: 4,
-      img1: "",
-      img2: "",
+      img1: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmsCCnD_7KpXppgExOo-y0x-TMTeW-AHfPYBap57v85QtbCP4F1uEEpYzxwRtK850Cb-4&usqp=CAU",
+      img2: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmFqpF--R_FqGVgUi7rZQPctw5vhI-1woPL1loPQVSlSEZiI2gJR4DLFhviPomNwGF6PE&usqp=CAU",
       title: "Hat",
       isNew:ture,
       oldPrice: 19,
