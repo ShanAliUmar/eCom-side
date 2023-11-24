@@ -5,7 +5,9 @@ import { Link } from "react-router-dom";
 const Card = ({ item }) => {
   console.log(item);
   return (
-   
+   <div className="div">
+    Card
+   </div>
   );
 };
 
