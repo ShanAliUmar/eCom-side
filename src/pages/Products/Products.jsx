@@ -18,7 +18,7 @@ const Products = () => {
         <div className="filterItem">
           <h2>Sort by</h2>
         </div>
-
+        
       </div>
       <div className="right"></div>
     </div>
