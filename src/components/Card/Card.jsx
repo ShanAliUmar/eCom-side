@@ -12,7 +12,7 @@ const Card = ({ item }) => {
           <img src={item.img1} alt="" className="mianImg" />
           <img src={item.img2} alt="" className="secondImg" />
         </div>
-        <h2>{item.title}</h2>
+        <h2 className="h2">{item.title}</h2>
         <div className="prices">
           <h3>${item.oldPrice}</h3>
           <h3>${item.price}</h3>
