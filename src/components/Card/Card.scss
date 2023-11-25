@@ -1,12 +1,10 @@
 .card {
-  width: 280px;
+  width: 220px;
   display: flex;
   flex-direction: column;
-  gap: 10px;
-  padding: 20px;
 
   .image {
-    width: 100%;
+    width: 200px;
     height: 350px;
     border-radius: 10px;
     overflow: hidden;
@@ -14,7 +12,7 @@
     transition: 1s;
 
     &:hover {
-      border: 1px solid blue;
+      border: 1px solid rgb(255, 0, 0);
       transition: 1s;
 
       .secondImg {
@@ -24,7 +22,7 @@
     }
 
     img {
-      width: 100%;
+      width: 200px;
       height: 100%;
       object-fit: cover;
       position: absolute;
