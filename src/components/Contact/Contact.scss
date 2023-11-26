@@ -35,7 +35,19 @@
   
       .icons{
         display: flex;
-        gap: 10px;
+
+        .iconItem{
+          border-radius: 50%;
+          width: 25px;
+          height: 25px;
+          padding: 5px;
+          transition: all 1s;
+
+          &:hover{
+            background-color: #4000ffb1;
+            transition: all 1s;
+          }
+        }
       }
     }
   }
