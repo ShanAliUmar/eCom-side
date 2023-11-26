@@ -10,9 +10,11 @@ import Navbar from './components/Navbar/Navbar'
 const Layout = () => {
   return (
     <div className="app">
-      <Navbar /> 
-      <Outlet />
-      <Footer/>
+      <Navbar />
+      <div style={{paddingTop:"80px"}}>
+        <Outlet />
+      </div>
+      <Footer />
     </div>
   );
 };
@@ -24,15 +26,15 @@ const router = createBrowserRouter([
     children: [
       {
         path: "/",
-        element: <Home/>,
+        element: <Home />,
       },
       {
         path: "/products/:id",
-        element: <Products/>,
+        element: <Products />,
       },
       {
         path: "/product/:id",
-        element: <Product/>,
+        element: <Product />,
       },
     ],
   },

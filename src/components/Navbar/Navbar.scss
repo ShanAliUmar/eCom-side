@@ -6,7 +6,17 @@
 
 .navbar {
   height: 80px;
+  width: 100vw;
+  z-index: 999;
   background-color: rgb(255, 255, 255);
+  transition: all 1s;
+  border-bottom: 0.3px solid blue;
+  position: fixed;
+
+  &:hover{
+    box-shadow: 2px 2px 30px 3px blue;
+    transition: all 1s;
+  }
 
   .wrapper {
     padding: 10px 30px;
