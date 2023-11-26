@@ -1,11 +1,15 @@
 import React from 'react'
 import "./Produets.scss"
 import List from '../../components/List/List'
+import { useParams } from 'react-router-dom'
 const Products = () => {
+
+
+  const param = useParams()
   return (
     <div className='products'>
       <div className="left">
-        <div className="filter">
+        <div className="filterItem">
           <h2>Products Categories</h2>
           <div className="inputItem">
             <input type="checkbox" id='1' value={1} />
@@ -20,7 +24,7 @@ const Products = () => {
             <label htmlFor="3">Coats</label>
           </div>
         </div>
-        <div className="filter">
+        <div className="filterItem">
           <h2>Filter by price</h2>
           <div className="inputItem">
             <span>0</span>
@@ -28,7 +32,7 @@ const Products = () => {
             <span>1000</span>
           </div>
         </div>
-        <div className="filter">
+        <div className="filterItem">
           <h2>Sort by</h2>
           <div className="inputItem">
             <input type="radio" id='asc' value='asc' name='price' />
