@@ -1,0 +1,53 @@
+.contact{
+    background-color: #2879fe;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+  
+    .wrapper{
+      width: 68%;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+  
+      input{
+        padding: 10px;
+        border: none;
+        outline: none;
+        border-radius: 5px 0 0  5px;
+        text-transform: capitalize;
+        &:hover{
+            color: rgb(50, 19, 19);
+        }
+        &::placeholder{
+            color: #000;
+        }
+      }
+  
+      button{
+        padding: 10px;
+        color: white;
+        background: #333;
+        border-radius: 0 5px 5px 0;
+        border: none;
+      }
+  
+      .icons{
+        display: flex;
+
+        .iconItem{
+          border-radius: 50%;
+          width: 25px;
+          height: 25px;
+          padding: 5px;
+          transition: all 1s;
+
+          &:hover{
+            background-color: #4000ffb1;
+            transition: all 1s;
+          }
+        }
+      }
+    }
+  }
