@@ -1,70 +1,36 @@
-import React from "react";
-import "./Cart.scss";
-import DeleteOutlinedIcon from "@mui/icons-material/DeleteOutlined";
-import { useSelector } from "react-redux";
-import { removeItem, resetCart } from "../../redux/cartReducer";
-import { useDispatch } from "react-redux";
-import { makeRequest } from "../../makeRequest";
-import { loadStripe } from "@stripe/stripe-js";
+import React from 'react'
 
 const Cart = () => {
-  const products = useSelector((state) => state.cart.products);
-  const dispatch = useDispatch();
 
-  const totalPrice = () => {
-    let total = 0;
-    products.forEach((item) => {
-      total += item.quantity * item.price;
-    });
-    return total.toFixed(2);
-  };
 
-  const stripePromise = loadStripe(
-    "pk_test_eOTMlr8usx1ctymXqrik0ls700lQCsX2UB"
-  );
-  const handlePayment = async () => {
-    try {
-      const stripe = await stripePromise;
-      const res = await makeRequest.post("/orders", {
-        products,
-      });
-      await stripe.redirectToCheckout({
-        sessionId: res.data.stripeSession.id,
-      });
 
-    } catch (err) {
-      console.log(err);
-    }
-  };
+    let dataImg = [
+        {
+          id: 1,
+          img1: "https://i0.wp.com/pixahive.com/wp-content/uploads/2021/03/Stylish-boy-posing-in-front-of-car-391363-pixahive.jpg?fit=1707%2C2560&ssl=1",
+          img2: "https://i.pinimg.com/736x/25/f6/e0/25f6e09aa4e3a2b53b964b20e8114174.jpg",
+          title: "Long Sleeve Graphic T-shirt",
+          isNew: true,
+          oldPrice: 19,
+          price: 12
+        },
+        {
+          id: 2,
+          img1: "https://i.pinimg.com/474x/b4/c6/be/b4c6be8403d714b40153aff00398704f.jpg",
+          img2: "https://i.pinimg.com/236x/9b/21/97/9b21977a67533d6a9357f84f3d7b85d3.jpg",
+          title: "Coat",
+          isNew: true,
+          oldPrice: 19,
+          price: 12
+        }
+      ]
+
+
   return (
-    <div className="cart">
-      <h1>Products in your cart</h1>
-      {products?.map((item) => (
-        <div className="item" key={item.id}>
-          <img src={process.env.REACT_APP_UPLOAD_URL + item.img} alt="" />
-          <div className="details">
-            <h1>{item.title}</h1>
-            <p>{item.desc?.substring(0, 100)}</p>
-            <div className="price">
-              {item.quantity} x ${item.price}
-            </div>
-          </div>
-          <DeleteOutlinedIcon
-            className="delete"
-            onClick={() => dispatch(removeItem(item.id))}
-          />
-        </div>
-      ))}
-      <div className="total">
-        <span>SUBTOTAL</span>
-        <span>${totalPrice()}</span>
-      </div>
-      <button onClick={handlePayment}>PROCEED TO CHECKOUT</button>
-      <span className="reset" onClick={() => dispatch(resetCart())}>
-        Reset Cart
-      </span>
+    <div>
+        Shan
     </div>
-  );
-};
+  )
+}
 
-export default Cart;
+export default Cart

@@ -11,8 +11,8 @@ const Product = () => {
 
 
   const images = [
-    "https://storage.sg.content-cdn.io/cdn-cgi/image/width=300,height=400,quality=90,format=auto,fit=cover,g=top/in-resources/22a79ec5-e694-4d7a-ac5a-85c8fa45b7f1/Images/ProductImages/Source/ITBSH01110SS-Mint_01.jpg",
-    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmVfV_LbY1DR-eWBZfH8IC-8tdYpDYnJNXZPwIEHCdbKlo5VnXTeGdebKRJJbpgU284gA&usqp=CAU"
+    "https://i0.wp.com/pixahive.com/wp-content/uploads/2021/03/Stylish-boy-posing-in-front-of-car-391363-pixahive.jpg?fit=1707%2C2560&ssl=1",
+    "https://i.pinimg.com/736x/25/f6/e0/25f6e09aa4e3a2b53b964b20e8114174.jpg",
   ]
   return (
     <div className='product'>
@@ -37,11 +37,13 @@ const Product = () => {
         <button className="add">
           <AddShoppingCartIcon /> ADD TO CART
         </button>
-        <div className="link">
-          <FavoriteBorderIcon /> ADD TO WISH LIST
-        </div>
-        <div className="item">
-          <BalanceIcon /> ADD TO COMPARE
+        <div className="row">
+          <div className="links">
+            <FavoriteBorderIcon /> ADD TO WISH LIST
+          </div>
+          <div className="item">
+            <BalanceIcon /> ADD TO COMPARE
+          </div>
         </div>
 
         <div className="info">
