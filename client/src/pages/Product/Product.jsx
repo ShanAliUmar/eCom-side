@@ -30,7 +30,7 @@ const Product = () => {
         <span>$199</span>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio ut temporibus voluptatibus sapiente! Veniam dolore, nobis tempora officiis accusamus doloremque ratione voluptatem consectetur, ipsam eius fugit iure omnis qui vero.</p>
         <div className="quantity">
-          <button onClick={() => setQuantity(prev === 1 ? 1 : prev - 1)}>-</button>
+          <button onClick={() => setQuantity(prev = prev - 1)}>-</button>
           {quantity}
           <button onClick={() => setQuantity(prev => prev + 1)}>+</button>
         </div>
