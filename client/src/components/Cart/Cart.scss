@@ -14,7 +14,7 @@
       font-weight: 400;
       font-size: 24px;
     }
-  
+
     .item {
       display: flex;
       align-items: center;
@@ -25,7 +25,7 @@
         height: 100px;
         object-fit: cover;
       }
-  
+      
       .details {
         h1 {
           font-size: 18px;
@@ -46,6 +46,9 @@
       .delete {
         color: red;
         font-size: 30px;
+        position: absolute;
+        right: 10px;
+        margin-top: 40px;
         cursor: pointer;
       }
     }
